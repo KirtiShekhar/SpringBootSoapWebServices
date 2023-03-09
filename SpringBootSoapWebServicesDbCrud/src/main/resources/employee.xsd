@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://crud.db.webservices.soap.springboot.com/entity"
+	xmlns:tns="http://crud.db.webservices.soap.springboot.com/entity"
+	elementFormDefault="qualified">
+	<element name="employee" type="tns:employee"></element>
+	<element name="company" type="tns:company"></element>
+
+	<complexType name="employee">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+			<element name="employeeName" type="string"></element>
+			<element name="employeeDepartment" type="string"></element>
+			<element name="employeeEmailAddress" type="string"></element>
+			<element name="employeeContactNumber" type="string"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="company">
+		<sequence>
+			<element name="companyId" type="long"></element>
+			<element name="companyName" type="string"></element>
+			<element name="companyLocationState" type="string"></element>
+			<element name="companyLocationAddress" type="string"></element>
+			<element name="companyWebsite" type="string"></element>
+		</sequence>
+	</complexType>
+</schema>

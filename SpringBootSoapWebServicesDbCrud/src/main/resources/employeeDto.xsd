@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://crud.db.webservices.soap.springboot.com/dto"
+	xmlns:tns="http://crud.db.webservices.soap.springboot.com/dto"
+	elementFormDefault="qualified">
+	<element name="getEmployeeRequest"
+		type="tns:getEmployeeRequest"></element>
+
+	<complexType name="getEmployeeRequest">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+		</sequence>
+	</complexType>
+
+	<element name="getEmployeeResponse"
+		type="tns:getEmployeeResponse">
+	</element>
+
+	<complexType name="getEmployeeResponse">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+			<element name="employeeName" type="string"></element>
+			<element name="employeeDepartment" type="string"></element>
+			<element name="employeeEmailAddress" type="string"></element>
+			<element name="employeeContactNumber" type="string"></element>
+			<element name="updateEmployeeResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<element name="createEmployeeResponse"
+		type="tns:createEmployeeResponse">
+	</element>
+
+	<complexType name="createEmployeeResponse">
+		<sequence>
+			<element name="employeeName" type="string"></element>
+			<element name="employeeDepartment" type="string"></element>
+			<element name="employeeEmailAddress" type="string"></element>
+			<element name="employeeContactNumber" type="string"></element>
+			<element name="createEmployeeResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<element name="updateEmployeeResponse"
+		type="tns:updateEmployeeResponse">
+	</element>
+
+	<element name="deleteEmployeeResponse"
+		type="tns:deleteEmployeeResponse">
+	</element>
+
+	<element name="createEmployeeRequest"
+		type="tns:createEmployeeRequest">
+	</element>
+
+	<element name="updateEmployeeRequest"
+		type="tns:updateEmployeeRequest">
+	</element>
+
+	<element name="deleteEmployeeRequest"
+		type="tns:deleteEmployeeRequest">
+	</element>
+
+	<complexType name="createEmployeeRequest">
+		<sequence>
+			<element name="employeeName" type="string"></element>
+			<element name="employeeDepartment" type="string"></element>
+			<element name="employeeEmailAddress" type="string"></element>
+			<element name="employeeContactNumber" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="updateEmployeeResponse">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+			<element name="employeeName" type="string"></element>
+			<element name="employeeDepartment" type="string"></element>
+			<element name="employeeEmailAddress" type="string"></element>
+			<element name="employeeContactNumber" type="string"></element>
+			<element name="updateEmployeeResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="deleteEmployeeResponse">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+			<element name="deleteEmployeeResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="updateEmployeeRequest">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+			<element name="employeeName" type="string"></element>
+			<element name="employeeDepartment" type="string"></element>
+			<element name="employeeEmailAddress" type="string"></element>
+			<element name="employeeContactNumber" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="deleteEmployeeRequest">
+		<sequence>
+			<element name="employeeId" type="long"></element>
+		</sequence>
+	</complexType>
+	<element name="getCompanyRequest"
+		type="tns:getCompanyRequest"></element>
+
+	<complexType name="getCompanyRequest">
+		<sequence>
+			<element name="companyId" type="long"></element>
+		</sequence>
+	</complexType>
+
+	<element name="getCompanyResponse"
+		type="tns:getCompanyResponse">
+	</element>
+
+	<complexType name="getCompanyResponse">
+		<sequence>
+			<element name="companyId" type="long"></element>
+			<element name="companyName" type="string"></element>
+			<element name="companyLocationState" type="string"></element>
+			<element name="companyLocationAddress" type="string"></element>
+			<element name="companyWebsite" type="string"></element>
+			<element name="updateEmployeeResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<element name="createCompanyResponse"
+		type="tns:createCompanyResponse">
+	</element>
+
+	<complexType name="createCompanyResponse">
+		<sequence>
+			<element name="companyId" type="long"></element>
+			<element name="companyName" type="string"></element>
+			<element name="companyLocationState" type="string"></element>
+			<element name="companyLocationAddress" type="string"></element>
+			<element name="companyWebsite" type="string"></element>
+			<element name="createCompanyResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<element name="updateCompanyResponse"
+		type="tns:updateCompanyResponse">
+	</element>
+
+	<element name="deleteCompanyResponse"
+		type="tns:deleteCompanyResponse">
+	</element>
+
+	<element name="createCompanyRequest"
+		type="tns:createCompanyRequest">
+	</element>
+
+	<element name="updateCompanyRequest"
+		type="tns:updateCompanyRequest">
+	</element>
+
+	<element name="deleteCompanyRequest"
+		type="tns:deleteCompanyRequest">
+	</element>
+
+	<complexType name="createCompanyRequest">
+		<sequence>
+			<element name="companyName" type="string"></element>
+			<element name="companyLocationState" type="string"></element>
+			<element name="companyLocationAddress" type="string"></element>
+			<element name="companyWebsite" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="updateCompanyResponse">
+		<sequence>
+			<element name="companyId" type="long"></element>
+			<element name="companyName" type="string"></element>
+			<element name="companyLocationState" type="string"></element>
+			<element name="companyLocationAddress" type="string"></element>
+			<element name="companyWebsite" type="string"></element>
+			<element name="updateCompanyResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="deleteCompanyResponse">
+		<sequence>
+			<element name="companyId" type="long"></element>
+			<element name="deleteCompanyResponseMessage" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="updateCompanyRequest">
+		<sequence>
+			<element name="companyId" type="long"></element>
+			<element name="companyName" type="string"></element>
+			<element name="companyLocationState" type="string"></element>
+			<element name="companyLocationAddress" type="string"></element>
+			<element name="companyWebsite" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="deleteCompanyRequest">
+		<sequence>
+			<element name="companyId" type="long"></element>
+		</sequence>
+	</complexType>
+</schema>
